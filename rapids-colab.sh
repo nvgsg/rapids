@@ -25,7 +25,7 @@ if [ ! -f Miniconda3-4.5.4-Linux-x86_64.sh ]; then
       python=3.6 cudatoolkit=10.0 \
       cudf=0.8 cuml=0.8 cugraph=0.8 gcsfs pynvml \
       dask-cudf=0.8 dask-cuml=0.8 \
-      rapidsai/label/xgboost::xgboost=0.8
+      rapidsai/label/xgboost::xgboost=>0.8
       
     echo "Copying shared object files to /usr/lib"
     # copy .so files to /usr/lib, where Colab's Python looks for libs
