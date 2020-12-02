@@ -40,7 +40,7 @@ if [ ! -f Miniconda3-4.5.4-Linux-x86_64.sh ]; then
 	cp /usr/local/lib/libxgboost.so /usr/lib/libxgboost.so
 	
 	echo "Pin cffi library due to incompatibility with newer numba"
-	pip install cffi==1.14.0 matplotlib
+	pip install cffi==1.14.3 matplotlib
 fi
 
 echo ""
